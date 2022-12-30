@@ -1,24 +1,24 @@
 first_number = 0
-
 intermediate_result = 0
 next_number = 0
 
-
-def summa():
+def summa() -> int:
     global intermediate_result
     global next_number
     global first_number
     intermediate_result = first_number + next_number
     first_number = intermediate_result
 
-def difference():
+
+def difference() -> int:
     global intermediate_result
     global next_number
     global first_number
     intermediate_result = first_number - next_number
     first_number = intermediate_result
 
-def multiplication():
+
+def multiplication()-> int:
     global intermediate_result
     global next_number
     global first_number
@@ -26,7 +26,7 @@ def multiplication():
     first_number = intermediate_result
 
 
-def division():
+def division()-> int:
     global intermediate_result
     global next_number
     global first_number
@@ -43,7 +43,6 @@ def check_operation(sm_operation: str):
         multiplication()
     elif sm_operation == '/':
         division()
-
 
 def get_intermediate_result():
     global intermediate_result

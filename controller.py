@@ -4,8 +4,8 @@ import logger
 
 def start():
     if view.choice_calc() == 'к1':
-        view.enter_expression()
-        logger.logger()
+        exp, answ = view.enter_expression()
+        logger.logger_two(exp, answ)
 
     if view.choice_calc() == 'к2':
         model.set_first_number(view.input_number())

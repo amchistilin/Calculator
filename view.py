@@ -22,4 +22,4 @@ def else_res():
 def enter_expression():
     a = input('Введите выражение, которое необходимо посчитать: ')
     res = eval(a)
-    return print(res)
+    return a, res
